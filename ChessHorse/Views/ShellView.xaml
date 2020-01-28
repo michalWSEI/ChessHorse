@@ -1,0 +1,242 @@
+﻿<Window x:Class="ChessHorse.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChessHorse.Views"
+        mc:Ignorable="d"
+        Title="ShellView" Height="320" Width="300">
+    <Grid>
+        <UniformGrid x:Name="ChessBoard" Margin="10,10,10,10" >
+            <Rectangle Stroke="Black" Height="72" VerticalAlignment="Top" Margin="0,0,-34,-34">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Fill="White" Stroke="Black"/>
+            <Rectangle Stroke="Black">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <UniformGrid.Style >
+                <Style x:Name="ChessPieceStyle">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding chessPieces.Type}" Value="WhitePawn">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_pawn_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="WhiteRook">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_rook_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="WhiteKnight">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_knight_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="WhiteBishop">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_bishop_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="WhiteQueen">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_queen_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="WhiteKing">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_white_king_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="BlackPawn">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_pawn_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="BlackRook">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_rook_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="BlackKnight">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_knight_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="BlackBishop">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_bishop_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="BlackQueen">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_queen_T.png" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Type}" Value="BlackKing">
+                            <Setter Property="Image.Source" Value="http://www.wpclipart.com/recreation/games/chess/chess_set_1/chess_piece_black_king_T.png" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </UniformGrid.Style>
+        </UniformGrid>
+
+
+
+
+
+        <ItemsControl   x:Name="ChessBoardControl" Margin="0,4,0,-4">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas Width="8" Height="8" Background="{Binding  Path=ChessBoard, Mode=TwoWay}"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="1" Height="1">
+                        <Image Width="0.8" Height="0.8" Style="{Binding Path=ChessPieceStyle}" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemContainerStyle>
+                <Style>
+                    <Setter Property="Canvas.Left" Value="{Binding Path=Pos.X}" />
+                    <Setter Property="Canvas.Top" Value="{Binding Path=Pos.Y}" />
+                </Style>
+            </ItemsControl.ItemContainerStyle>
+        </ItemsControl>
+
+
+
+
+    </Grid>
+
+
+
+
+
+
+
+
+</Window>
